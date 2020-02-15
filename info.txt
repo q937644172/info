@@ -1,0 +1,76 @@
+str.lower()  转换为小写
+str.upper()  转换为大写
+str.capitalize() 首字母大写
+str.title() 每个单词首字母大写
+str.swapcase() 大小写互换
+str.format()
+format(1234.567,'0.2f')保留两位小数四舍五入输出str
+\n 换行
+\t 缩进
+str.lstrip()删除左边空格
+str.rstrip()删除右边空格
+str.strip()删除左右空格
+len() 字符串长度
+find()找目标第一次出现的位置
+str.replace("a","b")b替换a
+end = "" 结尾不换行
+" " 结尾换行
+list.append(新元素) 在列表末端加入
+list.insert(索引，新元素)
+list[索引]= 新值
+list.remove(元素)删除指定元素
+dict.update(key = newvalue, key = newvale) 多个KV更新，有则更新，无则增加
+dict['value'] = 'newvalue' 单个kt更新
+dict['key'] = 'value' 有则更新，无则新增
+dict.pop('key') 删除指定键值对
+dict.popitem() 删除最后一个KV
+dict.clear()删除整个字典
+dict = {'key':'value','key':'value'}
+dict.setdefault('key'，'value')如果原来存在则不执行操作，如果不存在执行默认值
+dict.keys() #获取键 #class 'dict_keys ' 字典视图
+dict.values()获取值 #字典视图
+dict.items()获取键值对字典视图
+def func(a,b,c=具体值) 为参数设置默认值
+func(a,b,不同的具体值)修改function里面的具体值
+def func(a,b,c,d,e,f)
+func(a=sth,b=sth,c,=sth,d=sth,e=sth,f=sth)
+def func(a,b,*,c,d,e,f)
+*表示必须用关键字传参
+func(a,b,c=sth,d=sth,e=sth,f=sth)
+以上三个如果字典发生改变他们会跟着字典改变改变
+{}.format_map(dict)
+Dos 命令
+cd 切换目录
+dir 查看目录下的文件和文件夹
+cls 清楚屏幕显示的内容
+exit 推出控制台
+pip install virtualenv 安装虚拟环境
+pipenv 虚拟环境
+写TEST
+__name = '__main__'
+给function值
+filter
+map
+lambda
+def log(func):
+''记录函数执行的日志'
+	def wrapper():
+		print("开始执行")
+		func()
+		print("执行完毕")
+	return wrapper
+
+@log
+def hello():
+	print('hello world')
+
+if__name__ == '__main__':
+	hello();
+isinstance(对象，类的名称)
+Excepetion 几乎所有一场都是从他来的
+Attribute Error 引用属性赋值失败
+OSError 早做系统不能执行指定任务（文件类问题）
+NameError 找不到名称变量时的引发
+Syntax Error 代码不正确时引发
+Type error 将内置操作或者函数类型不正确的对象是引发
+ZeroDivisionError 在出发或者运算时第二个参数为零
